@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
 
 export default function App() {
   // console.log("App executed");
@@ -7,6 +7,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.baseFont}>Hii React Native! This is Agnivesh.</Text>
+      <Image source={require('./assets/icon.png')} />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
